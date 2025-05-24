@@ -3,7 +3,7 @@
 Modern, Responsive Gym Website
 This project is a front-end website for a martial arts and fitness gym, built to be clean, engaging, and work well on any device.
 
-✨ Live Demo: https://daniel3560.github.io/Fight-Factory-website/✨
+✨ Live Demo: https://daniel3560.github.io/Fight-Factory-website/ ✨
 
 🛠️ Technologies Used
 HTML5: For the website's structure and content.
