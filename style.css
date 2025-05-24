@@ -1,0 +1,380 @@
+/* Basic Resets & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+}
+
+.btn-signup:hover {
+    background-color: #e03e00;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-login:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-team {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+}
+
+.btn-team:hover {
+    background-color: #e03e00;
+}
+
+
+/* Header Styling */
+.main-header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjusted size for the glove logo */
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #555;
+    font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+    color: #007bff;
+}
+
+.header-buttons .btn {
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('mma ring.jpg'); /* MMA ring image behind text */
+    background-size: cover;
+    background-position: center; /* Center the image to see the ring */
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Added text shadow for readability */
+}
+
+
+/* What We Offer Section */
+.what-we-offer {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.offer-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.offer-image {
+    flex: 1;
+    min-width: 400px;
+    background-image: url('Best_bench_for_home_gym.webp'); /* Best bench image */
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.offer-image img { /* Ensures any stray img tags are hidden */
+    display: none;
+}
+
+.offer-content {
+    flex: 1.5;
+}
+
+/* Who Are We Section */
+.who-are-we {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #e2e2e2;
+}
+
+/* Image Gallery */
+.image-gallery {
+    padding: 0; /* Remove padding if no content */
+    background-color: transparent; /* Remove background if no content */
+}
+
+.image-gallery .container {
+    display: block; /* Change back to block if no grid items */
+    gap: 0; /* Remove gap */
+}
+
+.gallery-item {
+    display: none; /* Hide all gallery items */
+}
+
+
+/* Client Testimonials */
+.client-testimonials {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.testimonial-text {
+    flex: 2;
+}
+
+.testimonial-image {
+    flex: 1;
+    min-width: 300px;
+    background-image: url('dc1460f45b50711115e6633c5659f03d.jpg'); /* Woman pushing sled image */
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonial-image img { /* Ensures any stray img tags are hidden */
+    display: none;
+}
+
+/* Where You Can Find Us Section */
+.where-to-find-us {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #e2e2e2;
+}
+
+.where-to-find-us address {
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.map-placeholder {
+    margin-top: 30px;
+    background-color: #ccc;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Important for containing the map image */
+}
+
+.map-placeholder img { /* Style for the map image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure map fills space */
+    border-radius: 5px;
+}
+
+/* Call To Action */
+.call-to-action {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #bbb;
+    margin-right: 20px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav ul li {
+        margin: 5px 10px;
+    }
+
+    .header-buttons {
+        margin-top: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    /* Stack offer-box and testimonial-grid on small screens */
+    .offer-box, .testimonial-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer-image, .testimonial-image {
+        min-width: unset; /* Remove min-width on small screens */
+        width: 100%;
+    }
+    .offer-image {
+        min-height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .image-gallery .container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .main-footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
